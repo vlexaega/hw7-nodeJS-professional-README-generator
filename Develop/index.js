@@ -61,6 +61,7 @@ function generateREADME(answers) {
        // gitHubUsername,
        // email,
    } = answers
+   
    const readMeContent = `
    # ${title}
    ## Table of Contents
