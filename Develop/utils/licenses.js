@@ -1,7 +1,7 @@
 const licenseLinks = [
     {
         name: 'MIT License',
-        badge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+        badge: 'https://img.shields.io/badge/License-MIT-yellow.svg',
         link: 'https://opensource.org/licenses/MIT',
     },
     {
@@ -24,3 +24,5 @@ const licenseLinks = [
         badge: '[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
         link: 'https://opensource.org/licenses/BSD-3-Clause',
     }]
+
+module.exports = licenseLinks;

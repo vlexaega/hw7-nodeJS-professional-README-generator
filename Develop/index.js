@@ -2,7 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const licenses = require('./utils/licenses.json');
-const generateMarkdown = require('./utils/generateMarkdown');
+const { generateMarkdown } = require('./utils/generateMarkdown'); //adding the curly brackets 'destructures' the generateMarkdown.js file
+const licenseLinks = require('./utils/licenses');
 
 // Function to generate README content
 function generateREADME(answers) {
@@ -17,9 +18,13 @@ function generateREADME(answers) {
        // gitHubUsername,
        // email,
    } = answers;
-   
-   const licenseBadge = generateMarkdown.renderLicenseBadge(license);
-
+   //get the license badge
+   const licenseBadge = generateMarkdown(answers).licenseBadge;//targets an object in the generateMarkdown file with a licenseBadge property
+   //get the license object based on license name
+   const targetLicense = licenses.find((item) => item.name === license);
+   //if object is found, retrieve the license link
+   const licenseLink = targetLicense ? targetLicense.link : '';
+   //create the readme content
    const readMeContent = `
    # ${title} ${licenseBadge}
    ## Table of Contents
@@ -79,7 +84,7 @@ inquirer
         type: 'list',
         name: 'license',
         message: 'Choose a license for your project:',
-        choices: licenses.map((license) => license.name),
+        choices: licenseLinks.map((license) => license.name),
     },
 ])
 .then ((answers) => {
