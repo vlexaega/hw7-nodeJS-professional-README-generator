@@ -8,7 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.5.2",
+    "primeng": "^14.2.8-lts"
   },
   "keywords": [],
   "description": ""
