@@ -48,7 +48,7 @@ function generateMarkdown(data) {
 
 // Function to get the license names
 function getLicenseNames() {
-  return licenseLinks.map((license) => license.name);
+  return licenseLinks.map((license) => license.name); //uses the map array function to get the name from the license list
 }
 
 module.exports = {

@@ -43,7 +43,7 @@ function generateREADME(answers) {
    ${markdownData.license}
    ## Questions
 
-   You can reach me via email at alx.vga2@gmail.com
+   You can reach me via email at ${questions}
    `;
   return readMeContent;
 }
@@ -85,13 +85,13 @@ inquirer
       type: 'list',
       name: 'license',
       message: 'Choose a license for your project:',
-      choices: getLicenseNames(),
+      choices: getLicenseNames(), //call the getLicenseNames function from to generateMarkdown file
     },
     {
         type: 'input',
         name: 'questions',
         message: 'How can I reach you?',
-      },
+    },
   ])
   .then((answers) => {
     const readMeContent = generateREADME(answers);
