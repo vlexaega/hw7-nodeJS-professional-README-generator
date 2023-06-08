@@ -89,7 +89,7 @@ inquirer
     {
         type: 'input',
         name: 'questions',
-        message: 'How can I reach you?',
+        message: 'What is your email address?',
     },
     {
         type: 'input',
