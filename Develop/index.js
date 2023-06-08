@@ -1,9 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
+const fs = require('fs'); //this creates files
 const licenses = require('./utils/licenses.json');
 const { generateMarkdown } = require('./utils/generateMarkdown'); //adding the curly brackets 'destructures' the generateMarkdown.js file
 const licenseLinks = require('./utils/licenses');
+
 
 // Function to generate README content
 function generateREADME(answers) {
@@ -97,3 +98,4 @@ inquirer
 .catch ((err) => {
    console.error(err);
 });
+
