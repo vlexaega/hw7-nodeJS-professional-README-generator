@@ -41,6 +41,7 @@ function generateMarkdown(data) {
     title: data.title,
     license: licenseSection,
     badge: licenseBadge,
+    github: data.github, //adds the github property
   };
 
   return readmeData;
@@ -50,6 +51,8 @@ function generateMarkdown(data) {
 function getLicenseNames() {
   return licenseLinks.map((license) => license.name); //uses the map array function to get the name from the license list
 }
+
+
 
 module.exports = {
   generateMarkdown,

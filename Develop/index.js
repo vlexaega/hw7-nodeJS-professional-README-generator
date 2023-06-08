@@ -42,8 +42,7 @@ function generateREADME(answers) {
    ${contributionGuidelines}
    ${markdownData.license}
    ## Questions
-
-   You can reach me via email at ${questions}
+   You can reach me via email at ${questions} or you can visit my [GitHub]${markdownData.github} link
    `;
   return readMeContent;
 }
@@ -92,6 +91,11 @@ inquirer
         name: 'questions',
         message: 'How can I reach you?',
     },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github link?'
+    }
   ])
   .then((answers) => {
     const readMeContent = generateREADME(answers);

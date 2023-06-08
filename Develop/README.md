@@ -1,5 +1,5 @@
 
-   # java https://img.shields.io/badge/License-MIT-yellow.svg
+   # Javascript https://img.shields.io/badge/License-MIT-yellow.svg
    ## Table of Contents
    - [Description](#description)
    - [Installation](#installation)
@@ -8,20 +8,20 @@
    - [Contribution Guidelines](#contributionGuidelines)
    - [Questions](#questions)
    ## Description
-   test
+   Test
    ## Installation
-   wow
+   Test
    ## Usage
-   link
+   Test
    ## Test Instructions
-   this
+   Test
    ## Contribution Guidelines
-   to
+   Test
    
 ## License
 This application is covered under the [MIT License](P) license. https://img.shields.io/badge/License-MIT-yellow.svg
 
    ## Questions
-
-   You can reach me via email at john@smith.com
+   You can reach me via email at Email/n
+   or you can visit my [GitHub]Link link
    
