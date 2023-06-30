@@ -1,5 +1,5 @@
 
-   # Javascript Demo https://img.shields.io/badge/License-MIT-yellow.svg
+   # Express.js Challenge: Note Taker https://img.shields.io/badge/License-MIT-yellow.svg
    ## Table of Contents
    - [Description](#description)
    - [Installation](#installation)
@@ -8,15 +8,15 @@
    - [Contribution Guidelines](#contributionGuidelines)
    - [Questions](#questions)
    ## Description
-   This is to demonstrate the README markdown file being generated.
+   This application can be used to write and save notes. 
    ## Installation
-   The repo can be cloned via GitHub.
+   This application can be cloned via the link https://github.com/vlexaega/hw11-note-taker.
    ## Usage
-   The usage is intended for users who would like to generate their professional README markdown file directly within their code.
+   Users will utilize this tool to make notes and keep track of to-do items.
    ## Test Instructions
-   The repo can be cloned via GitHub.
+   This can be tested via the deployment link provided below.
    ## Contribution Guidelines
-   The repo is opensource.
+   The repo is opensource and anyone can contribute.
    
 ## License
 This application is covered under the [MIT License](P) license. https://img.shields.io/badge/License-MIT-yellow.svg
